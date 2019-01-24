@@ -1,0 +1,22 @@
+html
+  head
+    title REST API MY OWN FANCY PROJECT
+    link(rel="stylesheet", href="/static/css/app.css")
+  body
+    div.center
+      div.name
+        h2= projectTitle
+        p Documentation from REST API.
+
+        li.link
+          a(href='http://localhost:5000/docs/books/list') GET /books
+        li.link
+          a(href='http://localhost:5000/docs/books/item') GET /books/:id
+        li.link
+          a(href='http://localhost:5000/docs/products/list') GET /products
+        li.link
+          a(href='http://localhost:5000/docs/products/item') GET /products/:id
+
+      div.text
+        h1 API Reference
+        p My Own Fancy Project API is organized around REST. Our API has predictable resource-oriented URLs, accepts form-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.

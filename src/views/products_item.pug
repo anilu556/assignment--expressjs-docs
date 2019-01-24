@@ -1,0 +1,32 @@
+html
+  head
+    title GET /products/:id
+    link(rel="stylesheet", href="/static/css/app.css")
+  body
+  div.container
+    div.column1
+      h1= name
+      li.link
+        a(href='http://localhost:5000/') INDEX
+      li.link
+        a(href='http://localhost:5000/docs/books/list') GET /books
+      li.link
+        a(href='http://localhost:5000/docs/books/item') GET /books/:id
+      li.link
+        a(href='http://localhost:5000/docs/products/list') GET /products
+      li.link
+        a(href='http://localhost:5000/docs/products/item') GET /products/:id
+
+    div.column2
+      li
+      h3 Objective
+      p.req Get each product by Id.
+      h3 How to do a request?
+      p.req You can retrieve the product Id by sending an HTTP GET request to the URI with the Endpoint.
+      h3 Endpoint
+      p.req= endpoint
+      
+    div.column3
+      li.res What is the response
+      p.res If the request succeeds, the server responds with the 200 OK HTTP status code and product:
+      p.res=JSON.stringify(list)
